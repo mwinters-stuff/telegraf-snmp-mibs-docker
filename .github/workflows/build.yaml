@@ -5,7 +5,6 @@ on:
   repository_dispatch:
     types: [start-build]
 
-
 permissions:
   contents: write # needed to write releases
   id-token: write # needed for keyless signing
@@ -14,7 +13,6 @@ permissions:
 env:
   REGISTRY_PROJECT: public
   CHART_NAME: telegraf-snmp-mibs
-
 
 jobs:
   build:
